@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h2{
+				margin: 0px auto;
+				width: 500px;
+				height: 35px;
+			}
+			a[href="#xg"]{
+				margin-right:300px;
+			}
+			.d1{
+				width: 500px;
+				height: 500px;
+				background: darkgray;
+				margin: 0px auto;
+			}
+			
+			#xg{
+				height: 0px;
+				width:200px;
+				background: red;
+				float: left;
+				overflow: hidden;
+			}
+			#dg{
+				width:200px;
+				height: 0px;
+				background: blue;
+				float: right;
+				overflow: hidden;
+			}
+			#xg:target,#dg:target{
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>
+			<a href="#xg">西瓜皮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dg">冬瓜皮</a>
+		</h2>
+		<div class="d1">
+			<div id="xg">我是西瓜</div>
+			<div id="dg">我是冬瓜</div>
+		</div>
+		
+	</body>
+</html>
